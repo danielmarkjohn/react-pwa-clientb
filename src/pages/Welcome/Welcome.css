@@ -1,0 +1,49 @@
+.speed-test-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.speed-test-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.speed-test-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.speed-test-button:hover {
+  background-color: #0056b3;
+}
+
+.speed-test-result {
+  margin-top: 20px;
+}
+
+.speed-test-log {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.speed-test-meter {
+  margin-top: 20px;
+  height: 20px;
+  background-color: #eee;
+  position: relative;
+}
+
+.meter-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
