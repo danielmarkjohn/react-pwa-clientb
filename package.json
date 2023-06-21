@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Speed Test Client",
   "license": "MIT",
-  "main": "server/server.ts",
+  "main": "server/server.js",
 
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "https-preview": "serve dist",
     "prepare": "husky install",
-    "start": "node server/server.ts"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
