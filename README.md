@@ -2,45 +2,14 @@
  <img src="./public/cover.png" title="Base App">
 </a>
 
-# React-PWA - `v2` is here 🚀🎉⚡️
+# P2P Speed Test - `v1`
 
 **Starter kit for modern web applications!**
 
 ## Synopsis
 
-This project (a GitHub template) is an opinionated setup for modern web applications.
-It's a combination of essential (and minimal) libraries/components/utils/etc., which developers usually need during the process of making modern React applications.
+This project is to setup a P2P Speed Test Application
 
-## Motivation
-
-Almost all projects need to have a router, a UI framework, store integration, theming, error handling, base file/folder structure, a builder, some developer tools (eslint, prettier, etc), and many more. In this starter kit, we tried to put together the best options available from the above-mentioned fields. Out of the box, it provides a modern production-ready setup created by developers for developers 💚
-
-## Features
-
-- ✅ [Vite](#vite)
-- ✅ [React](#react)
-  - `v18` 🔥
-- ✅ [TypeScript](#typescript)
-- ✅ [Router](#router)
-  - `React Router v6`
-- ✅ [UI-framework](#ui-framework)
-  - `MUI v5`
-- ✅ [Store](#store)
-  - `Recoil`
-- ✅ [Notifications](#notifications)
-- ✅ [Theme](#theme)
-- ✅ [Base file/folder structure](#base-filefolder-structure)
-- ✅ [PWA](#pwa)
-- ✅ [Performance](#performance)
-- ✅ [Hotkeys](#hotkeys)
-- ✅ [Error Handling](#error-handling)
-- ✅ [Pages](#pages)
-- ✅ [Dev tools](#dev-tools)
-  - ✅ eslint
-  - ✅ prettier
-  - ✅ husky
-  - ✅ lint-staged
-  - ✅ https localhost
 
 #### Vite
 
@@ -71,67 +40,6 @@ As a store management tool [Recoil](https://recoiljs.org/) is used. Check the [s
 #### Notifications
 
 Out of the box you have a notification system. To show a simple notification you can use `useNotification` hook:
-
-```js
-import { useNotifications } from '@/store/notifications';
-
-function MyCoolComponent() {
-  const [notifications, actions] = useNotification();
-
-  function showNotification() {
-    actions.push({ message: 'Բարև, կարմի՛ր արև' });
-  }
-
-  return (
-    ...
-  );
-}
-
-```
-
-#### Theme
-
-The [theme system](./src/theme/) is based on [MUI Theme](https://mui.com/material-ui/customization/theming/#main-content). To get the current theme mode or to change it you can use `useTheme` hook:
-
-```js
-...
-import { useTheme } from '@/store/theme';
-
-function MyCoolComponent() {
-  const [theme, actions] = useTheme();
-
-  // check the current theme mode
-  console.log(theme);
-
-  // if you want to change the theme, call an appropriate action
-  function toggleTheme() {
-    actions.toggle();
-  }
-
-  ...
-}
-```
-
-You have access to `theme` object via `sx` prop and `styled-components`:
-
-```js
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/system';
-
-// styled-components
-const MyCoolButton = styled(Button)(({ theme }) => ({
-  marginRight: theme.spacing(1),
-  color: theme.palette.text.disabled,
-}));
-
-// sx prop
-function MyCoolComponent() {
-  return <Box sx={{ borderRadius: theme.shape.borderRadius }}>...</Box>;
-}
-```
-
-Also, you can redefine the theme in the theme configuration file. Check the [src/theme/themes.ts](./src/theme/themes.ts) file for more information.
 
 #### Base file/folder structure
 
