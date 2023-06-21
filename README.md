@@ -2,9 +2,8 @@
  <img src="./public/cover.png" title="Base App">
 </a>
 
-# P2P Speed Test - `v1`
+# P2P Speed Test Server - `v1`
 
-**Starter kit for modern web applications!**
 
 ## Synopsis
 
